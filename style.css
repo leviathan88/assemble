@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  padding: 26px 60px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 800;
+}
+header img {
+  width: 115px;
+  height: 15px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+header ul a {
+  color: #454545;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+header ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ef2853;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+header ul a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .icon-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .icon-div i {
+  font-size: 24px;
+  color: #454545;
+}
+header .icon-div i:hover {
+  color: #ef2853;
+  transition: 0.3s;
+}
+header .icon-div .hamburger-icon {
+  width: 30px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+header .icon-div .hamburger-icon:hover {
+  gap: 8px;
+  transition: 0.3s;
+}
+header .icon-div .hamburger-icon div {
+  width: 100%;
+  height: 3px;
+  background-color: #454545;
+}
+
+#slider-div {
+  width: 100%;
+  height: 650px;
+  padding: 0 60px;
+  margin-top: 85px;
+}
+#slider-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.filter-menu {
+  padding: 50px 0;
+}
+.filter-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.filter-menu ul a {
+  color: #454545;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+.filter-menu ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ef2853;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.filter-menu ul a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+section {
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+section a {
+  height: 500px;
+  position: relative;
+}
+section a:hover div {
+  display: flex;
+}
+section a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section a div {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  display: none;
+}
+section a div p {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+section a div span {
+  color: #454545;
+  font-size: 15px;
+}
+
+footer {
+  padding: 40px 80px;
+  margin-top: 100px;
+  border-top: 1px solid #e5e5e5;
+  display: grid;
+  grid-template-columns: 200px auto 220px auto auto;
+  align-items: center;
+  gap: 20px;
+}
+footer a {
+  color: #454545;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #f6c0a5;
+}
+footer .links {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .icons {
+  font-size: 21px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+footer .icons a {
+  color: #999999;
+}
+footer .icons a:hover {
+  color: black;
+}
+footer .up-button {
+  padding-left: 100px;
+}
+footer .up-button button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #f6c0a5;
+  color: white;
+}
+footer .up-button button:hover {
+  background-color: #333;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
